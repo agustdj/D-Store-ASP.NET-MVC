@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WEBSITEBANHANG.Models.Category>
+<h2>Category</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@category">Edit</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@category">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

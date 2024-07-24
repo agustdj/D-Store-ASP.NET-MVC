@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WEBSITEBANHANG.props" />
+</Project>
